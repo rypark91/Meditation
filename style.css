@@ -1,0 +1,118 @@
+/* body{
+    background-image: url("space.gif");
+    background-repeat: none;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Carattere', cursive;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#menu{
+
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+    border-style: dotted;
+    border-width: 14px;
+    border-radius: 8px;
+    border-color: grey;
+}
+h1{
+    margin-top: 20px
+}
+button{
+    width: 20%;
+    height: 200px;
+    margin: 50px 2px;
+    font-size: 20px;
+    border: none;
+}
+.spaceBackground{
+    background-color: #0f012b;
+}
+.forestBackground{
+    background-color: #46ff40;
+}
+#space{
+    background-color: #290373;
+    color: white;
+}
+#forest{
+    background-color: #46ff40;
+}
+#beach{
+    background-color: #02f7ef;
+}
+#dark{
+    background-color: #222;
+    color: white;
+}
+#space:active{
+    background-color: #160141;
+}
+#forest:active{
+    background-color: #3bbf36;
+}
+#beach:active{
+    background-color: #028df7;
+}
+#dark:active{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#space, #forest, #beach, #dark{
+    cursor: pointer;
+}
+.beachBackground{
+    background-color: #02f7ef;
+}
+.darkBackground{
+    background-color: black;
+}
+#opacityBackground{
+    display: none;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    animation-name: fadeBackground;
+    animation-delay: 3s;
+    animation-duration: 11s;
+}
+#message{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 33%;
+    font-size: 40px;
+    animation-name: fadeText;
+    animation-delay: 3s;
+    animation-duration: 3s;
+}
+#copyright{
+    text-align: center;
+}
+@keyframes fadeBackground{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .6;
+    }
+}
+@keyframes fadeText{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
